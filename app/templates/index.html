@@ -3,5 +3,8 @@
 {% block title %}{% endblock %}
 
 {% block app_content %}
-  <h1>Pi= {{ calc.showPi() }} </h1>
+  {% with listitems = calc.showPi() %}
+  <h1>Pi= {{ listitems[0] }} </h1>
+  <h1>2**3 = {{ listitems[1] }}<h1>
+    {% endwith %}
 {% endblock %}
