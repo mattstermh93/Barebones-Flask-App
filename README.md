@@ -1,3 +1,3 @@
 # barebones
 
-Basic template for future bootstrap projects
+Basic template for Flask projects
